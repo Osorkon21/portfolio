@@ -1,3 +1,38 @@
 /* use sans-serif font family for all */
 
 /* expanding main image needs a flex-grow factor of 1 (i think) and others should be 0 to have fixed size */
+:root {
+  --ltcolor: cornsilk;
+}
+
+* {}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.my-name {
+  background-color: darkslategrey;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.my-name h1 {
+  width: 20%;
+  background-color: cadetblue;
+  justify-content: right;
+  color: var(--ltcolor);
+  padding: 15px;
+  font-size: 35px;
+}
+
+.my-name nav {
+  padding-right: 50px;
+}
+
+.my-name nav ul li {
+  display: inline;
+  padding: 10px;
+}
