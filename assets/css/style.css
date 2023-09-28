@@ -81,28 +81,32 @@ header {
   margin: 40px;
 }
 
-/* .deployed-apps {
+.deployed-apps {
   flex-wrap: wrap;
-} */
+  align-items: stretch;
+  min-height: 100%;
+}
 
 .about-me aside,
 .deployed-apps aside {
+  flex: 0 0 150px;
+  padding-right: 40px;
   margin-left: 60px;
   margin-right: 40px;
-
+  border-right: 5px solid var(--page-dark-color);
 }
 
-.about-me aside p,
-.deployed-apps aside p {
+.about-me aside h2,
+.deployed-apps aside h2 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
   text-align: right;
   font-size: 50px;
   color: var(--page-dark-color);
+  min-height: 100%;
 }
 
 .about-me div {
-  border-left: 5px solid var(--page-dark-color);
   padding-left: 20px;
 }
 
@@ -111,19 +115,24 @@ header {
   line-height: 1.5;
 }
 
+.big-picture {
+  flex: 1 1 500px;
+}
+
 /* most code in this selector provided by Gary in-class 9/27/23 */
 .big-picture a {
-  width: 640px;
-  height: 480px;
+  height: 640px;
   border: 3px solid var(--page-dark-color);
   background-image: url("../images/Horiseon\ Screen\ Sample.png");
   background-size: cover;
   display: flex;
-  flex-grow: 1;
   flex-direction: column-reverse;
   align-items: flex-start;
   text-decoration: none;
-  border-left: 5px solid var(--page-dark-color);
+}
+
+.img-wrapper {
+  display: flex;
 }
 
 .picture-description {
@@ -137,7 +146,6 @@ header {
 }
 
 .bossfall a {
-  width: 640px;
   height: 480px;
   border: 3px solid var(--page-dark-color);
   background-image: url("../images/Dragon\ Eye.png");
@@ -147,11 +155,9 @@ header {
   flex-direction: column-reverse;
   align-items: flex-start;
   text-decoration: none;
-  border-left: 5px solid var(--page-dark-color);
 }
 
-.DC1 a {
-  width: 640px;
+.dc1 a {
   height: 480px;
   border: 3px solid var(--page-dark-color);
   background-image: url("../images/Opening\ Screen.png");
@@ -161,7 +167,6 @@ header {
   flex-direction: column-reverse;
   align-items: flex-start;
   text-decoration: none;
-  border-left: 5px solid var(--page-dark-color);
 }
 
 @media screen and (max-width: 810px) {
