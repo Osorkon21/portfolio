@@ -5,9 +5,10 @@
   --page-dark-color: darkslategrey;
 }
 
-/* Font family for page */
+/* main font and color for page */
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: var(--ltcolor);
 }
 
 /* Color for top of page */
@@ -75,12 +76,10 @@ header {
   background-image: url(../images/cropped-pool.png);
 }
 
-/* pool image overlay box formatting  */
-.nice-looking-header-img p {
-  color: var(--ltcolor);
-  background-color: var(--word-bground-color);
-  padding: 15px;
-  font-size: 35px;
+/* photo of me formatting */
+.nice-looking-header-img img {
+  height: 200px;
+  border-radius: 50%;
 }
 
 /* sets up general spacing for main body of page */
@@ -247,6 +246,17 @@ header {
     display: block;
     margin-left: 0px;
     padding: 3px;
+  }
+
+  /* keep deployed app images in column */
+  .apps-area {
+    display: block;
+  }
+
+  /* add margins between deployed app images */
+  .bossfall {
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 
   /* sidebars disappear */
