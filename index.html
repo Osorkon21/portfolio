@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Peter Krause Portfolio</title>
+
+  <!-- links .css files to this .html file -->
   <link rel="stylesheet" href="./assets/css/reset.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
@@ -13,11 +15,13 @@
 
   <header>
 
+    <!-- Top bar with in-page nav links -->
     <div class="top-bar">
       <div class="my-name">
         <h1>Peter Krause</h1>
       </div>
 
+      <!-- in-page nav links -->
       <div class="top-right-links">
         <nav>
           <ul>
@@ -30,6 +34,7 @@
       </div>
     </div>
 
+    <!-- water background image -->
     <div class="nice-looking-header-img">
       <p>Portfolio</p>
     </div>
@@ -37,12 +42,15 @@
 
   <main>
 
-    <section class="about-me">
-      <!-- About Me -->
+    <!-- About Me section -->
+    <section class="about-me" id="about-me">
+
+      <!-- sidebar -->
       <aside>
         <h2>About Me</h2>
       </aside>
 
+      <!-- two paragraph bio -->
       <div>
         <p>I am Peter Krause, an avid computer geek and gamer. I grew up in a household surrounded by PCs. My father is
           a software engineer, and he loved working with and building his own machines. I inherited that love, but I did
@@ -58,35 +66,48 @@
 
     </section>
 
-    <section class="deployed-apps">
+    <!-- Work section -->
+    <section class="deployed-apps" id="deployed-apps">
 
+      <!-- sidebar -->
       <aside>
         <h2>Work</h2>
       </aside>
 
-      <div class="big-picture">
-        <a href="https://osorkon21.github.io/semantic-html/" target="_blank">
-          <div class="picture-description">
-            <p>First assignment</p>
-            <p>HTML/CSS</p>
-          </div>
-        </a>
-      </div>
+      <!-- this div added for flex configuration -->
+      <div class="apps-area">
 
-      <div class="img-wrapper">
-        <div class="bossfall">
+        <!-- First deployed app image, biggest image on page -->
+        <div class="item big-picture">
+          <a href="https://osorkon21.github.io/semantic-html/" target="_blank">
+            <div class="picture-description">
+
+              <!-- background image overlay text -->
+              <p>First assignment</p>
+              <p>HTML/CSS</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Smaller images of my older work in second row -->
+        <div class="item bossfall">
           <a href="https://github.com/Osorkon21/Bossfall" target="_blank">
             <div class="picture-description">
+
+              <!-- background image overlay text -->
               <p>First mod</p>
               <p>Unity/C#</p>
             </div>
           </a>
         </div>
 
-        <div class="dc1">
+        <!-- Smaller images of my older work in second row -->
+        <div class="item dc1">
           <a href="https://drive.google.com/drive/folders/1BLOxpY8gIc2v9eS0y5eFlfBC1-yacDAk?usp=sharing"
             target="_blank">
             <div class="picture-description">
+
+              <!-- background image overlay text -->
               <p>My game</p>
               <p>C++</p>
             </div>
@@ -94,13 +115,30 @@
         </div>
       </div>
 
-
     </section>
   </main>
 
-  <!-- <footer class="contact-me resume"> -->
-  <!-- Contact me info/details -->
-  <!-- </footer> -->
+  <!-- Bottom bar with faux contact info so I don't get spam -->
+  <footer class="contact-me resume" id="contact-me">
+
+    <!-- sidebar -->
+    <aside>
+      <h2>Contact Me</h2>
+    </aside>
+
+    <!-- fake contact links so I don't get spam -->
+    <nav>
+      <ul>
+        <li><a href="tel:5551234567">555-123-4567</a></li>
+        <li><a href="mailto:jdoe@example.com">jdoe@example.com</a></li>
+        <li><a href="https://github.com/Osorkon21" target="_blank">GitHub</a></li>
+
+        <!-- Resume doesn't exist yet, Gary recommended using Google as a link -->
+        <li id="resume"><a href="https://www.google.com/" target="_blank">Resume</a></li>
+      </ul>
+    </nav>
+
+  </footer>
 
 </body>
 
